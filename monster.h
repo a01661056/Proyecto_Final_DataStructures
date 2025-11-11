@@ -1,0 +1,19 @@
+#pragma once
+
+#include<iostream>
+#include<string>
+
+class Monster{
+    private:
+        int id;
+        std::string name;
+        int HP; //health
+        int ATK; //attack
+        int DEF; //defense
+        int probability; //appearance probability
+        int reward; //reward for hero when defeating monster
+    public:
+        Monster(int id, std::string name, int HP, int ATK, int DEF, int probability, int reward);
+};
+
+#include"monster.tpp"
