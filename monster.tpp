@@ -1,6 +1,6 @@
 #pragma once
 
-#include"monster.h"
+#include"Monster.h"
 #include<iostream>
 #include<string>
 #include<fstream>
@@ -26,7 +26,7 @@ Monster::Monster(int id, std::string name, int HP, int ATK, int DEF, int probabi
     this->reward = reward;
 }
 
-void Monster::setID(int num){
+void Monster::setId(int num){
     id = num;
 }
 

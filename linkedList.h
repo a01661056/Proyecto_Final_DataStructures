@@ -8,7 +8,7 @@ private:
 public:
     LinkedList();
     ~LinkedList();
-    void insert(const T& val);
+    void pushFront(const T& val);
     Node<T>* getHead();
     void printLL();
 };

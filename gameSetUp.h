@@ -12,7 +12,6 @@ class GameSetUp{
         LinkedList<Monster> monstersList; 
     public:
         GameSetUp();
-        ~GameSetUp();
         bool uploadMonsters(std::string fileName);
 };
 

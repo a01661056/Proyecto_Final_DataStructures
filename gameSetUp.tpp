@@ -4,10 +4,6 @@ GameSetUp::GameSetUp(){
     LinkedList<Monster> monstersList;
 }
 
-GameSetUp::~GameSetUp(){
-    monstersList.clear();
-}
-
 bool GameSetUp::uploadMonsters(std::string fileName){
 	std::ifstream file(fileName);
 	std::string line;
@@ -39,7 +35,7 @@ bool GameSetUp::uploadMonsters(std::string fileName){
 
 			switch(campo) {
                 case 0:
-                    newMonster.setID(stoi(cell));
+                    newMonster.setId(stoi(cell));
                     break;
 				case 1:
 					newMonster.setName(cell);

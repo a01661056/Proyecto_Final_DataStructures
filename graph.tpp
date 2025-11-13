@@ -50,9 +50,9 @@ void Graph<T>::addEdge(const T& val1, const T& val2, bool directed) {
         cout << "Square or Squares not in the graph\n";
         return;
     }
-    (adjacencyList[indexVal1] -> neighbors) -> insert(val2);
+    (adjacencyList[indexVal1] -> neighbors) -> pushFront(val2);
     if (!directed) {
-        (adjacencyList[indexVal2] -> neighbors) -> insert(val1);
+        (adjacencyList[indexVal2] -> neighbors) -> pushFront(val1);
     }
 }
 

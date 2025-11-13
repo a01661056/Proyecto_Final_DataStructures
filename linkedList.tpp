@@ -18,7 +18,7 @@ LinkedList<T>::~LinkedList() {
 }
 
 template <typename T>
-void LinkedList<T>::insert(const T& val) {
+void LinkedList<T>::pushFront(const T& val) {
     Node<T>* newNode = new Node<T>(val);
 
     if (!head) {
